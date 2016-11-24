@@ -5,7 +5,7 @@ const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   inject: 'body'
 });
 
-const config = {
+module.exports = {
   entry: [
     './app/public/index.js'
   ],
@@ -15,12 +15,10 @@ const config = {
   },
   module: {
     loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader', query: { presets: 'react', 'es2015' } },
+      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader', query: { presets: [ 'react', 'es2015' ] } },
       { test: /\.css$/, loader: 'style-loader!css-loader' },
       { test: /\.scss$/, loaders: [ 'style', 'css', 'sass' ] }
     ]
   },
   plugins: [ HTMLWebpackPluginConfig ]
 };
-
-export default config;
