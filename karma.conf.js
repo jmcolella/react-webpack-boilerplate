@@ -1,9 +1,9 @@
 const webpack = require('webpack');
 
-const karmaConfig = function( config ) {
+module.exports = ( config ) => {
   config.set({
     browsers: ['Chrome'],
-    // singleRun: true, // uncomment for singleRun of tests
+    singleRun: true, // comment for multiple run of tests
     frameworks: ['mocha'],
     files: [
       'tests.webpack.js'
@@ -22,7 +22,7 @@ const karmaConfig = function( config ) {
         ]
       },
       externals: {
-        'cheerio': 'window'
+        'cheerio': 'window',
         'react/addons': true,
         'react/lib/ExecutionEnvironment': true,
         'react/lib/ReactContext': true
@@ -34,5 +34,3 @@ const karmaConfig = function( config ) {
     }
   });
 };
-
-export default karmaConfig;
