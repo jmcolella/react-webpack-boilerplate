@@ -1,4 +1,4 @@
-import webpack from 'webpack';
+const webpack = require('webpack');
 
 const karmaConfig = function( config ) {
   config.set({
@@ -35,4 +35,4 @@ const karmaConfig = function( config ) {
   });
 };
 
-export default karmaConfig; 
+export default karmaConfig;
