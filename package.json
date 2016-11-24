@@ -4,6 +4,9 @@
   "description": "Webpack / Babel framework for quick set up",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --config ./webpack.prod.config.js --progress --colors",
+    "start-d": "webpack-dev-server",
+    "start-p": "node ./app.js",
     "test": "karma start"
   },
   "repository": {
@@ -17,6 +20,7 @@
   },
   "homepage": "https://github.com/jmcolella/webpack-boilerplate#readme",
   "dependencies": {
+    "express": "^4.14.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-redux": "^4.4.6",
@@ -44,6 +48,8 @@
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.3",
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-hot-middleware": "^2.13.2"
   }
 }
