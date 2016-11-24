@@ -1,0 +1,19 @@
+{
+  "name": "webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "Webpack / Babel framework for quick set up",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmcolella/webpack-boilerplate.git"
+  },
+  "author": "John Colella",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmcolella/webpack-boilerplate/issues"
+  },
+  "homepage": "https://github.com/jmcolella/webpack-boilerplate#readme"
+}
