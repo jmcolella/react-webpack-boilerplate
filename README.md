@@ -13,9 +13,9 @@ Happy coding!
 - Redux dependencies available for easy integration.
 
 # Basic Commands
-- `npm run start -d`: utlizes development server.
+- `npm run start-d`: utlizes development server.
 - `npm run build`: production build of application.
-- `npm run start -p`: see output on production server.
+- `npm run start-p`: see output on production server.
 - `npm run test`: runs Karma test runner and shows output on Terminal. Chrome is the default browser.
 
 
