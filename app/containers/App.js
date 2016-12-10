@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../assets/stylesheets/application.scss';
 
 class App extends Component {
-  render() {
+  render () {
     return (
       <div className='container center-text'>
         <div className='app-header'>
@@ -13,6 +13,6 @@ class App extends Component {
       </div>
     )
   }
-};
+}
 
 export default App;

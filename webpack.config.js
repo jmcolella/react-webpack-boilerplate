@@ -16,12 +16,18 @@ module.exports = {
     filename: 'index_bundle.js'
   },
   module: {
+    preLoaders: [
+      { test: /\.js$/,  exclude: /node_modules/, loader: "eslint-loader" }
+    ],
     loaders: [
       { test: /\.js$/, exclude: /node_modules/, loader: 'react-hot' },
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader', query: { presets: [ 'react', 'es2015' ] } },
       { test: /\.css$/, loader: 'style-loader!css-loader' },
       { test: /\.scss$/, loaders: [ 'style', 'css', 'sass' ] }
     ]
+  },
+  eslint: {
+    configFile: './.eslintrc'
   },
   plugins: [
     HTMLWebpackPluginConfig
