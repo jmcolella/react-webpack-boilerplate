@@ -1,12 +1,12 @@
 {
   "name": "webpack-boilerplate",
   "version": "1.0.0",
-  "description": "Webpack / Babel framework for quick set up",
+  "description": "React / Webpack / Babel framework for quick set up",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config ./webpack.prod.config.js --progress --colors",
-    "start-d": "webpack-dev-server --inline --hot",
-    "start-p": "node ./app.js",
+    "start": "node ./app.js",
+    "dev": "webpack-dev-server --inline --hot",
     "test": "karma start"
   },
   "repository": {

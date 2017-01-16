@@ -1,6 +1,6 @@
 # React / Webpack Boilerplate
 
-Basic set-up for using React with Webpack. 
+Basic set-up for using React with Webpack.
 
 This boilerplate is designed to be a quick start for building and allows for as much customization as the user sees fit.
 
@@ -13,9 +13,7 @@ Happy coding!
 - Redux dependencies available for easy integration.
 
 # Basic Commands
-- `npm run start-d`: utilizes development server.
+- `npm run dev`: utilizes development server.
 - `npm run build`: production build of application.
-- `npm run start-p`: see output on production server.
-- `npm run test`: runs Karma test runner and shows output on Terminal. Chrome is the default browser.
-
-
+- `npm start`: see output on production server.
+- `npm test`: runs Karma test runner and shows output on Terminal. Chrome is the default browser.
