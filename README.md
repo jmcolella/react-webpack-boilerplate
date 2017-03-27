@@ -34,7 +34,7 @@ class Test extends Component {
   ...
   render() {
     return (
-      <div class='classFromStylesheet'>
+      <div className='classFromStylesheet'>
         <h1>Test</h1>
       </div>
       
